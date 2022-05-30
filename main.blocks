@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="zvLO{Pkhk]))@+-H|-Gz">diceValue</variable><variable id="w:m0O.h~!]v}?naWD(,R">lista</variable><variable id="M:7%(4I?1G*;w@_0%eyb">myImage</variable></variables><block type="function_definition" id="OXf#i`_M?o}-L3[MkFo_" x="89" y="-164"><mutation name="rollDice" functionid="q5}?pl-/LIDF;f^k{(D+"/><field name="function_name">rollDice</field><statement name="STACK"><block type="device_show_image_offset" id=".5yq@n#*h29u-fR?P,8Q"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="lists_index_get" id="!7Ri3SxJ%$Qqu[NadWni"><value name="LIST"><block type="variables_get" id="K{!#kzdG=!/!^mhX_gT["><field name="VAR" id="w:m0O.h~!]v}?naWD(,R">lista</field></block></value><value name="INDEX"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_random" id="3A$^fX^!65qfXf_)so6I"><value name="min"><shadow type="math_number" id=";K)a;H54-,*y0Z2,tQ`6"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="cFNWQzV^9Lsn4t[z*mab"><field name="NUM">5</field></shadow></value></block></value></block></value><value name="offset"><shadow type="math_number" id="fC:DB|{^*+^|5Gs@,R/%"><field name="NUM">0</field></shadow></value></block></statement></block><block type="function_definition" id="fW!TW+h7HVhjCe^{_;QR" x="0" y="0"><mutation name="setDicePatterns" functionid="p/Hy|15t%DX%+~+#RGF9"/><field name="function_name">setDicePatterns</field><statement name="STACK"><block type="variables_set" id="}g}:Qe5|}~2Ds[oxx7S,"><field name="VAR" id="w:m0O.h~!]v}?naWD(,R">lista</field><value name="VALUE"><block type="lists_create_with" id=")}`sE6482V~WA6?FoqS!" inline="false"><mutation items="6" horizontalafter="3"/><value name="ADD0"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="_*+RRmbM0M;1HKNL:Okk"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><value name="ADD1"><shadow type="math_number" disabled="true"><field name="NUM">1</field></shadow><block type="device_build_image" id="J5p_%#jEGm%e{jN=^*=W"><field name="LEDS">`
+        . . . . . 
+        . . . # . 
+        . . . . . 
+        . # . . . 
+        . . . . .
+        `</field></block></value><value name="ADD2"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="y$U)}q]-!l8tiGD[|:hu"><field name="LEDS">`
+        . . . . . 
+        . . . # . 
+        . . # . . 
+        . # . . . 
+        . . . . .
+        `</field></block></value><value name="ADD3"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="j/(;NSbjiMi2WP.k@Iu,"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # . # . 
+        . . . . .
+        `</field></block></value><value name="ADD4"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="/|(3EMpRK^*ipbt/D_YL"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        . . . . .
+        `</field></block></value><value name="ADD5"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="cY(Z]-dN6{j-IplDVt#z"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . # . # . 
+        . # . # . 
+        . . . . .
+        `</field></block></value></block></value></block></statement></block><block type="pxt-on-start" id="kak;rR|/Nio0A|gM.F4%" x="500" y="50"><statement name="HANDLER"><block type="function_call" id="cU4Yl`LHITEAH[|(!sv;"><mutation name="setDicePatterns" functionid="p/Hy|15t%DX%+~+#RGF9"/><next><block type="function_call" id="N/n^Y.)5Zco;cJVtLPKq"><mutation name="rollDice" functionid="q5}?pl-/LIDF;f^k{(D+"/></block></next></block></statement></block><block type="device_gesture_event" id=":l/()Bah3ibLv)9@qCVS" x="661" y="226"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="function_call" id="mD4dv.sUFw^!LQ_}Tvvq"><mutation name="rollDice" functionid="q5}?pl-/LIDF;f^k{(D+"/></block></statement></block></xml>
